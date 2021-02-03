@@ -15,11 +15,13 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
+let myNumber = 17;
 
-
+console.log(`this is my number turned into a string: ${myNumber.toString()}`);
 
 // Write a JavaScript program to convert a string to the number.
-
+ let myString = "25";
+ console.log(`this is my string converted to a number: ${parseInt(myString)}`);
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -29,23 +31,56 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+  const famousCharacter = "yoda"
+  const famousNumber = 3.14
+  const famousJSThing = NaN
+  const famousBoolean = false
+  const famousArray = [2,3,4,5,]
+  const famousPersonObject = {name:"john", age:34 }
+  const famousJSValue = null
+  const famousFunction = () =>{
+    return false
+  }
+  console.log("famousCharacter is a type of: "+ typeof famousCharacter)
+  console.log("famousNumber is a type of : " + typeof famousNumber)
+  console.log("famousBoolean is a type of : "+ typeof famousBoolean)
+  console.log("famousJSValue is a type of : "+ typeof famousJSValue)
+  console.log("famousJSThing is a type of : "+ typeof famousJSThing)
+  console.log("famousArray is a type of : "+ typeof famousArray)
+  console.log("famousPersoneObject is a type of : "+ typeof famousPersonObject)
+  console.log("famousFunction is atype of : " + typeof famousFunction)
 
   
 // Write a JavaScript program that adds 2 numbers together.
+let addTwoNumbers = (a,b)=>{
+  return a+b 
+};
 
-
-
+console.log(addTwoNumbers(5,5));
 // Write a JavaScript program that runs only when 2 things are true.
 
-
-
+let bothTrue = (arg1, arg2)=>{
+  if(arg1 && arg2){
+    return "both are true"
+  };
+};
+console.log(bothTrue(5,5));
 // Write a JavaScript program that runs when 1 of 2 things are true.
+let oneTrue = (arg1, arg2)=>{
+  if(arg1 || arg2){
+    return "one is true";
+  }; 
+  };
 
-
+  console.log(oneTrue(5,NaN));
 
 // Write a JavaScript program that runs when both things are not true.  
-
+let noneTrue = (arg1, arg2)=>{
+  if(!arg1 && !arg2){
+    return "neither are true"
+  } 
+}
+console.log(noneTrue(false, false));
 // ***************************
 //         PART TWO
 // ***************************
